@@ -162,7 +162,7 @@ footer p {
   form div {
   display: flex;
   flex-direction: column;
-  margin-right: 40px; 
+  margin-right: 10px; 
   }
 
   form label {
@@ -173,7 +173,7 @@ footer p {
 
   form select,
   form input {
-  width: 180px;
+  width: 130px;
   }
 
   form button {
@@ -202,19 +202,25 @@ footer p {
   #about .content-row {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 20px; 
+  align-items: center;
+  max-width: 100%; 
+  }
+
+  #about .images {
+    display: flex;
+    justify-content:space-between;
+    width: 50%;
   }
 
   #about img {
-  width: 100%; 
-  max-width: 300px; 
+  width: calc(50% - 10px); 
   }
 
   #about p {
-  max-width: 100%;
+  flex: 1;
+  max-width: 50%;
   text-align: justify;
-  margin: 20px 0;
+  margin: 20px;
   }
 
   /* Ideas section */
